@@ -1,4 +1,4 @@
-package com.att.tdp.bisbis10.model;
+package com.att.tdp.bisbis10.request;
 
 public class OrderItemRequest {
 

@@ -1,4 +1,6 @@
-package com.att.tdp.bisbis10.model;
+package com.att.tdp.bisbis10.request;
+
+import com.att.tdp.bisbis10.request.OrderItemRequest;
 
 import java.util.List;
 

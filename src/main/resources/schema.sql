@@ -23,8 +23,8 @@
         order_id INT NOT NULL,
         dish_id BIGINT NOT NULL,
         amount INT NOT NULL,
-        CONSTRAINT fk_order FOREIGN KEY (order_id) REFERENCES orders(id)
---         CONSTRAINT fk_dish FOREIGN KEY (dish_id) REFERENCES dishes(id)
+        CONSTRAINT fk_order FOREIGN KEY (order_id) REFERENCES orders(id),
+        CONSTRAINT fk_dish FOREIGN KEY (dish_id) REFERENCES dishes(id)
     );
 
     CREATE TABLE IF NOT EXISTS dishes (

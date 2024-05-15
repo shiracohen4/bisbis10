@@ -1,9 +1,9 @@
 package com.att.tdp.bisbis10.controller;
 
 import com.att.tdp.bisbis10.model.OrderItemModel;
-import com.att.tdp.bisbis10.model.OrderItemRequest;
+import com.att.tdp.bisbis10.request.OrderItemRequest;
 import com.att.tdp.bisbis10.model.OrderModel;
-import com.att.tdp.bisbis10.model.OrderRequest;
+import com.att.tdp.bisbis10.request.OrderRequest;
 import com.att.tdp.bisbis10.response.OrderResponse;
 import com.att.tdp.bisbis10.service.OrderItemService;
 import com.att.tdp.bisbis10.service.OrderService;

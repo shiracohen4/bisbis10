@@ -23,7 +23,7 @@ public class RestaurantService {
         return restaurantRepository.findAll();
     }
 
-    // Find restaurant by cuisine
+    // Find restaurants by cuisine
     public List<RestaurantModel> findRestaurantsByCuisine(String cuisine) {
         return restaurantRepository.findByCuisine(cuisine);
     }

@@ -8,5 +8,8 @@ INSERT INTO ratings (restaurant_id, rating) VALUES
 -- INSERT INTO orders (restaurant_id, order_items) VALUES
 -- (2, '[{"dishId": 12, "amount": 1}, {"dishId": 14, "amount": 1}]');
 
+-- INSERT INTO dishes (restaurant_id, rating) VALUES
+-- (1, 4.5), (2, 5.0);
+
 
 

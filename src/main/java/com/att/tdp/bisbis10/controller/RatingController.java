@@ -22,6 +22,7 @@ public class RatingController {
         this.ratingService = ratingService;
     }
 
+    // Add a restaurant rating
     @PostMapping
     public ResponseEntity<Void> addRating(@RequestBody RatingModel ratingModel) {
         // Save the rating

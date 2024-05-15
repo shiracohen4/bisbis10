@@ -1,7 +1,6 @@
 package com.att.tdp.bisbis10.service;
 
 import com.att.tdp.bisbis10.model.RatingModel;
-import com.att.tdp.bisbis10.model.RestaurantModel;
 import com.att.tdp.bisbis10.repository.RatingRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
