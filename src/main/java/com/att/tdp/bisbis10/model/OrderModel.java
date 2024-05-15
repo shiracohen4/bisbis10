@@ -2,9 +2,11 @@ package com.att.tdp.bisbis10.model;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
-@Table(name = "ratings")
-public class RatingModel {
+@Table(name = "orders")
+public class OrderModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -12,14 +14,11 @@ public class RatingModel {
 
     private Long restaurantId;
 
-    private Float rating;
+    //Constructors
+    public OrderModel() {}
 
-    // Constructors
-    public RatingModel() {}
-
-    public RatingModel(Long restaurantId, Float rating) {
+    public OrderModel(Long restaurantId) {
         this.restaurantId = restaurantId;
-        this.rating = rating;
     }
 
     // Getters and setters
@@ -37,13 +36,5 @@ public class RatingModel {
 
     public void setRestaurantId(Long restaurantId) {
         this.restaurantId = restaurantId;
-    }
-
-    public Float getRating() {
-        return rating;
-    }
-
-    public void setRating(Float rating) {
-        this.rating = rating;
     }
 }

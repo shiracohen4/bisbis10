@@ -16,12 +16,9 @@ public class RestaurantModel {
 
     private String name;
 
-//    private double averageRating; // not sure if the rating is necessary here
-
     private boolean isKosher;
 
-    // For simplicity, we're storing cuisines as a comma-separated string
-    private String cuisines;
+    private String cuisines; // For simplicity, 'cuisines' is stored as a comma-separated string
 
     // Constructors
     public RestaurantModel() {

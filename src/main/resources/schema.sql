@@ -15,8 +15,16 @@
 
     CREATE TABLE IF NOT EXISTS orders (
         id SERIAL PRIMARY KEY,
-        restaurant_id INT NOT NULL,
-        order_items JSONB NOT NULL
+        restaurant_id INT NOT NULL
+    );
+
+    CREATE TABLE IF NOT EXISTS order_items (
+        id SERIAL PRIMARY KEY,
+        order_id INT NOT NULL,
+        dish_id BIGINT NOT NULL,
+        amount INT NOT NULL,
+        CONSTRAINT fk_order FOREIGN KEY (order_id) REFERENCES orders(id)
+--         CONSTRAINT fk_dish FOREIGN KEY (dish_id) REFERENCES dishes(id)
     );
 
     CREATE TABLE IF NOT EXISTS dishes (
