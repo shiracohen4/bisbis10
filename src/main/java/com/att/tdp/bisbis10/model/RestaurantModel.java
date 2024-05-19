@@ -6,6 +6,10 @@ import jakarta.persistence.Table;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
+/**
+ * Represents a restaurant entity.
+ */
+
 @Entity
 @Table(name = "restaurants")
 public class RestaurantModel {
@@ -16,21 +20,21 @@ public class RestaurantModel {
 
     private String name;
 
-    private boolean isKosher;
+    private Boolean isKosher;
 
     private String cuisines; // For simplicity, 'cuisines' is stored as a comma-separated string
 
-    // Constructors
+
     public RestaurantModel() {
     }
 
-    public RestaurantModel(String name, boolean isKosher, String cuisines) {
+    public RestaurantModel(String name, Boolean isKosher, String cuisines) {
         this.name = name;
         this.isKosher = isKosher;
         this.cuisines = cuisines;
     }
 
-    // Getters and setters
+
     public Long getId() {
         return id;
     }
@@ -47,11 +51,11 @@ public class RestaurantModel {
         this.name = name;
     }
 
-    public boolean isKosher() {
+    public Boolean isKosher() {
         return isKosher;
     }
 
-    public void setKosher(boolean kosher) {
+    public void setKosher(Boolean kosher) {
         isKosher = kosher;
     }
 

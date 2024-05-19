@@ -1,19 +1,22 @@
 package com.att.tdp.bisbis10.request;
 
-import com.att.tdp.bisbis10.request.OrderItemRequest;
-
 import java.util.List;
+
+/**
+ * Represents a request to create an order.
+ */
 
 public class OrderRequest {
     private Long restaurantId;
     private List<OrderItemRequest> orderItems;
+
 
     public OrderRequest(Long restaurantId, List<OrderItemRequest> orderItems) {
         this.restaurantId = restaurantId;
         this.orderItems = orderItems;
     }
 
-    // Getters and setters
+
     public Long getRestaurantId() {
         return restaurantId;
     }

@@ -1,5 +1,9 @@
 package com.att.tdp.bisbis10.response;
 
+/**
+ * Represents a response containing details about an order.
+ */
+
 public class OrderResponse {
     private Long orderId;
 

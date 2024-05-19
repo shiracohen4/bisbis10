@@ -2,7 +2,9 @@ package com.att.tdp.bisbis10.model;
 
 import jakarta.persistence.*;
 
-import java.util.List;
+/**
+ * Represents an order made by a customer at a restaurant.
+ */
 
 @Entity
 @Table(name = "orders")
@@ -14,14 +16,14 @@ public class OrderModel {
 
     private Long restaurantId;
 
-    //Constructors
+
     public OrderModel() {}
 
     public OrderModel(Long restaurantId) {
         this.restaurantId = restaurantId;
     }
 
-    // Getters and setters
+
     public Long getId() {
         return id;
     }

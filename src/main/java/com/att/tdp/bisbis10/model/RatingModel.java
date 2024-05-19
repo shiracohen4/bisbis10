@@ -2,6 +2,10 @@ package com.att.tdp.bisbis10.model;
 
 import jakarta.persistence.*;
 
+/**
+ * Represents a rating given by a customer to a restaurant.
+ */
+
 @Entity
 @Table(name = "ratings")
 public class RatingModel {
@@ -14,7 +18,7 @@ public class RatingModel {
 
     private Float rating;
 
-    // Constructors
+
     public RatingModel() {}
 
     public RatingModel(Long restaurantId, Float rating) {
@@ -22,7 +26,7 @@ public class RatingModel {
         this.rating = rating;
     }
 
-    // Getters and setters
+
     public Long getId() {
         return id;
     }

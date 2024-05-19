@@ -4,6 +4,10 @@ import jakarta.persistence.*;
 
 import java.math.BigDecimal;
 
+/**
+ * Represents a dish offered by a restaurant.
+ */
+
 @Entity
 @Table(name = "dishes")
 public class DishModel {
@@ -20,7 +24,7 @@ public class DishModel {
 
     private Long restaurantId;
 
-    // Constructors
+
     public DishModel() {}
 
     public DishModel(String name, String description, BigDecimal price, Long restaurantId) {
@@ -30,7 +34,6 @@ public class DishModel {
         this.restaurantId = restaurantId;
     }
 
-    // Getters and setters
 
     public Long getId() {
         return id;

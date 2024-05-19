@@ -1,16 +1,20 @@
 package com.att.tdp.bisbis10.request;
 
+/**
+ * Represents an item in an order request.
+ */
+
 public class OrderItemRequest {
 
     private Long dishId;
     private int amount;
+
 
     public OrderItemRequest(Long dishId, int amount) {
         this.dishId = dishId;
         this.amount = amount;
     }
 
-    // Getters and setters
 
     public Long getDishId() {
         return dishId;

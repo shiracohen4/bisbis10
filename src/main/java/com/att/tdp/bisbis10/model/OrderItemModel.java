@@ -2,6 +2,10 @@ package com.att.tdp.bisbis10.model;
 
 import jakarta.persistence.*;
 
+/**
+ * Represents an item in an order made by a customer at a restaurant.
+ */
+
 @Entity
 @Table(name = "order_items")
 public class OrderItemModel {
@@ -14,7 +18,7 @@ public class OrderItemModel {
     private Long dishId;
     private Integer amount;
 
-    // Constructors
+
     public OrderItemModel() {}
 
     public OrderItemModel(Long orderId, Long dishId, Integer amount) {
@@ -23,7 +27,7 @@ public class OrderItemModel {
         this.amount = amount;
     }
 
-    // Getters and setters
+
     public Long getOrderId() {
         return orderId;
     }

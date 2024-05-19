@@ -2,16 +2,22 @@ package com.att.tdp.bisbis10.request;
 
 import java.math.BigDecimal;
 
+/**
+ * Represents a request to create or update a dish.
+ */
+
 public class DishRequest {
     private String name;
     private String description;
     private BigDecimal price;
+
 
     public DishRequest(String name, String description, BigDecimal price) {
         this.name = name;
         this.description = description;
         this.price = price;
     }
+
 
     public String getName() {
         return name;
